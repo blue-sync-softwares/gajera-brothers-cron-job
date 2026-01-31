@@ -1,0 +1,24 @@
+name: Keep Frontend & Backend Alive
+
+on:
+  schedule:
+    # Every 14 minutes (safe for Render free tier)
+    - cron: "*/14 * * * *"
+  workflow_dispatch: # allows manual run
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Hit Frontend URL (simple wake-up)
+        run: |
+          echo "Hitting frontend..."
+          curl -s -o /dev/null -w "Frontend status: %{http_code}\n" "$FRONTEND_URL"
+
+      - name: Hit Backend URL (expect JSON)
+        run: |
+          echo "Hitting backend..."
+          response=$(curl -s "$BACKEND_URL")
+          echo "Backend response:"
+          echo "$response"
