@@ -1,0 +1,27 @@
+{
+  "name": "gajera-brothers-cron-job",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blue-sync-softwares/gajera-brothers-cron-job.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blue-sync-softwares/gajera-brothers-cron-job/issues"
+  },
+  "homepage": "https://github.com/blue-sync-softwares/gajera-brothers-cron-job#readme",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "node-cron": "^4.2.1",
+    "node-fetch": "^3.3.2"
+  }
+}
