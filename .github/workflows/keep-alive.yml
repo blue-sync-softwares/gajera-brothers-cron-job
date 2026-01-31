@@ -9,6 +9,9 @@ on:
 jobs:
   ping:
     runs-on: ubuntu-latest
+    env:
+      FRONTEND_URL: ${{ secrets.FRONTEND_URL }}
+      BACKEND_URL: ${{ secrets.BACKEND_URL }}
 
     steps:
       - name: Hit Frontend URL (simple wake-up)
