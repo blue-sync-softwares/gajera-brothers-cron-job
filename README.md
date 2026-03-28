@@ -1,0 +1,1 @@
+[![Keep Frontend & Backend Alive](https://github.com/blue-sync-softwares/gajera-brothers-cron-job/actions/workflows/keep-alive.yml/badge.svg)](https://github.com/blue-sync-softwares/gajera-brothers-cron-job/actions/workflows/keep-alive.yml)
