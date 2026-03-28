@@ -3,7 +3,7 @@ name: Keep Frontend & Backend Alive
 on:
   schedule:
     # Every 14 minutes (safe for Render free tier)
-    - cron: "*/14 * * * *"
+    - cron: "*/5 * * * *"
   workflow_dispatch: # allows manual run
 
 jobs:
